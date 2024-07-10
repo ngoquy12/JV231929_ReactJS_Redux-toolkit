@@ -15,7 +15,7 @@ const userSlice = createSlice({
   extraReducers: (builder) => {
     // Xử lý các tác vụ bất đồng bộ
     // Trạng thái chờ tải dữ liệu
-    builder.addCase(fetchAllUsers.pending, (state, action) => {
+    builder.addCase(fetchAllUsers.pending, (state) => {
       state.loading = status.PENDING;
     });
 
